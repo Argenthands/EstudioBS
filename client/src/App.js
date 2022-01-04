@@ -1,11 +1,12 @@
 import React from "react";
 
+import NavBar from "./components/NavBar/NavBar";
 import './App.css';
 
 export default function App() {
   return (
-    <div>
-      void
+    <div className="App">
+      <NavBar />
     </div>
   );
 }

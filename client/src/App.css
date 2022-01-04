@@ -1,20 +1,38 @@
+*{
+  margin: 0.3%;
+  padding: 0.3%;
+  font-family:"Times New Roman", Times, serif;
+  background-color: #DED5BE;
+}
+
 .App {
-  text-align: center;
+  display: grid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NavBar {
+  background-color: #c0bcb0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
+.NavBarImg{
+  background-color: #DED5BE;
+  padding: auto;
+  margin-left: 0.5%;
+  margin-right: auto;
+}
+
+.NavBarButton{
+  background-color: #DED5BE;
+  border: 2.5px solid black;
+  border-radius: 10px;
+  padding: 0.3%;
+  margin: auto;
+}
+.NavBarButton:hover{
+  background-color: #b3a072;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 0.5%;
+  margin: auto;
+}
