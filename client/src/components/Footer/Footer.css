@@ -1,0 +1,19 @@
+.Footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: 10%;
+    width: 100%;
+}
+.FooterItem{
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.FooterTitle{
+    justify-content: center;
+	overflow: hidden;
+}
+.Button{
+    text-align: center;
+}
