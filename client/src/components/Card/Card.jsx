@@ -10,7 +10,7 @@ export default function Card(props) {
         <div className='Card'>
             <h4 className='Title'>{titulo}</h4>
             <p>soy un texto random bastante largo para que pueda visualizar como van quedando las cosas</p>
-            <button>Soy un button</button>
+            <button className='CardButton'>Soy un button</button>
         </div>
     )
 }

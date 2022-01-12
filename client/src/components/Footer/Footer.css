@@ -1,19 +1,25 @@
 .Footer{
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    height: 10%;
-    width: 100%;
+    grid-template-columns: 40% 30% 10% 10%;
 }
 .FooterItem{
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
+    margin-left: 30%;
+    margin-right: 0%;
 }
 .FooterTitle{
-    justify-content: center;
-	overflow: hidden;
+    font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima, Arial", "sans-serif";
 }
 .Button{
-    text-align: center;
+    border: 2.5px solid darkgoldenrod;
+    border-radius: 10px;
+    padding: 3px;
+}
+.Button:hover{
+    border: 2.5px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.SendResume{
+    margin-left: 0%;
 }
