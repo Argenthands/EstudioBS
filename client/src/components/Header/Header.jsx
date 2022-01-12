@@ -6,6 +6,7 @@ export default function Header() {
     return (
         <div className='Header'>
             <NavBar />
+            <hr />
             <div className='Logo'>
                 <img src={image} alt="asociados" className='Image'/>
             </div>

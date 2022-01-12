@@ -6,27 +6,33 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Body from "./components/Body/Body";
 import Profesionales from "./components/Profesionales/Profesionales";
+import Servicios from "./components/Servicios/Servicios";
+import NotFound from "./components/NotFound/NotFound";
 import './App.css';
 
 export default function App() {
 	return (
 		<div className="App">
+			<Header />
 			<Routes>
 				<Route path="/" element={
 					<>
-						<Header />
 						<Body />
-						<Footer />
 					</>
 				} />
-				<Route path="Profesionales" element={
+				<Route path="/Profesionales" element={
 					<>
-						<Header />
 						<Profesionales />
-						<Footer />
 					</>
 				} />
+				<Route path="/Servicios" element={
+					<>
+						<Servicios />
+					</>
+				} />
+				<Route path="*" element={<NotFound />}/>
 			</Routes>
+			<Footer />
 		</div>
 	);
 }

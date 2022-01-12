@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import './NavBar.css'
-import image from '../../image/Justicia1.jpg'
+import image from '../../image/Logo.png'
 
 export default function NavBar() {
-    const contenido = ['Inicio','Profesionales', 'Servicios', 'Ubicación', 'Contacto']
+    const contenido = ['Inicio', 'Sobre nosotros', 'Profesionales', 'Servicios', 'Ubicación', 'Contacto']
     return (
         <nav className='NavBar'>
             <img src={image} className='NavBarImg'/>
