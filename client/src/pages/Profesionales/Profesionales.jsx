@@ -1,6 +1,6 @@
 import React from 'react'
 import './Profesionales.css'
-import SlideShow from '../SlideShow/SlideShow'
+import SlideShow from '../../components/SlideShow/SlideShow'
 
 export default function Profesionales() {
     return (

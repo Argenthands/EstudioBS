@@ -5,9 +5,10 @@ import { Route, Routes } from 'react-router-dom'
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Body from "./components/Body/Body";
-import Profesionales from "./components/Profesionales/Profesionales";
-import Servicios from "./components/Servicios/Servicios";
-import NotFound from "./components/NotFound/NotFound";
+import Profesionales from "./pages/Profesionales/Profesionales";
+import Servicios from "./pages/Servicios/Servicios";
+import NotFound from "./pages/NotFound/NotFound";
+import AboutUs from "./pages/AboutUs/AboutUs";
 import './App.css';
 
 export default function App() {
@@ -28,6 +29,11 @@ export default function App() {
 				<Route path="/Servicios" element={
 					<>
 						<Servicios />
+					</>
+				} />
+				<Route path="/AboutUs" element={
+					<>
+						<AboutUs />
 					</>
 				} />
 				<Route path="*" element={<NotFound />}/>

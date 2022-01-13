@@ -3,14 +3,13 @@ import './Card.css'
 
 export default function Card(props) {
 
-    const titulo = props.props
-    console.log(typeof(props.props))
+    const { title, text, professional } = props
 
     return (
         <div className='Card'>
-            <h4 className='Title'>{titulo}</h4>
-            <p>soy un texto random bastante largo para que pueda visualizar como van quedando las cosas</p>
-            <button className='CardButton'>Soy un button</button>
+            <h4 className='CardTitle'>{title}</h4>
+            <p>{text}</p>
+            <button className='CardButton'>{`Contacta un ${professional}`}</button>
         </div>
     )
 }

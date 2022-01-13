@@ -1,0 +1,20 @@
+.SlideShow{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 45px 150px 45px;
+}
+.CarouselImg{
+    max-width: 150px;
+    max-height: 250px;
+    grid-column-start: 2;
+}
+.LeftControllers{
+    grid-column-start: 1;
+    max-width: 45px;
+    max-height: 45px;
+}
+.RightControllers{
+    grid-column-start: 3;
+    max-width: 45px;
+    max-height: 45px;
+}
