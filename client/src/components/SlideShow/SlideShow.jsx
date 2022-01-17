@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './SlideShow.css'
 ///home/alejandro/Development/Work/Familia/EstudioBS/client/src/components/SlideShow/img/triangleLeftArrow.svg
 import { ReactComponent as FlechaIzquierda } from './img/leftArrow.svg'
