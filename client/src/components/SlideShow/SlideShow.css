@@ -1,20 +1,45 @@
 .SlideShow{
+    background: url("#");
+    display: flex;
+    justify-content: center;
     align-items: center;
-    display: grid;
-    grid-template-columns: 45px 150px 45px;
+}
+.Slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .CarouselImg{
-    max-width: 150px;
-    max-height: 250px;
-    grid-column-start: 2;
+    height: 333px;
+    width: auto;
 }
 .LeftControllers{
-    grid-column-start: 1;
-    max-width: 45px;
-    max-height: 45px;
+    border: 2.5px solid darkgoldenrod;
+    border-radius: 10px;
+    padding: 3.5px;
+    margin: auto;
+
+}
+.LeftControllers:hover{
+    border: 2.5px solid black;
+    border-radius: 10px;
+    padding: 3.5px;
+    margin: auto;
 }
 .RightControllers{
-    grid-column-start: 3;
-    max-width: 45px;
-    max-height: 45px;
+    border: 2.5px solid darkgoldenrod;
+    border-radius: 10px;
+    padding: 3.5px;
+    margin: auto;
 }
+.RightControllers:hover{
+    border: 2.5px solid black;
+    border-radius: 10px;
+    padding: 3.5px;
+    margin: auto;
+}
+.Name{}
+.Profession{}

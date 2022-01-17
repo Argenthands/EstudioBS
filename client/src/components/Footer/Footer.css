@@ -1,5 +1,7 @@
 .Footer{
-    margin-top: 50px;
+    
+    background-size: 100%;
+    margin-top: 0;
     display: grid;
     grid-template-columns: 40% 30% 10% 10%;
 }

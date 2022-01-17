@@ -5,14 +5,17 @@ import image from '../../image/Logo.png'
 
 export default function NavBar() {
     return (
-        <nav className='NavBar'>
-            <img src={image} className='NavBarImg'/>
-            <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'/'}>Inicio</NavLink>
-            <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'AboutUs'}>Sobre Nosotros</NavLink>
-            <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'Profesionales'}>Profesionales</NavLink>
-            <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'Servicios'}>Servicios</NavLink>
-            <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'Ubicacion'}>Ubicación</NavLink>
-            <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'Contacto'}>Contacto</NavLink>
-        </nav> 
+        <div>
+            <nav className='NavBar'>
+                <img src={image} className='NavBarImg'/>
+                <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'/'}>Inicio</NavLink>
+                <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'AboutUs'}>Sobre Nosotros</NavLink>
+                <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'Profesionales'}>Profesionales</NavLink>
+                <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'Servicios'}>Servicios</NavLink>
+                <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'Location'}>Ubicación</NavLink>
+                <NavLink className={({isActive})=> isActive ? 'active' : 'NavBarButton'} to={'Contact'}>Contacto</NavLink>
+            </nav>
+            <hr /> 
+        </div>
     )
 }

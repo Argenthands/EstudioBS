@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Noto+Sans:ital@1&family=The+Nautigal&display=swap');
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'The Nautigal', cursive;
+*/
 .Header{
-    background: url("../../image/Verdes2.jpg");
+    background: white;
     background-size: 100%;
     margin: auto;
 }
@@ -7,6 +13,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.Typewriter{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
 }
 .Image{
 

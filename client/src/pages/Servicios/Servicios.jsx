@@ -1,9 +1,10 @@
 import React from 'react'
+import Cards from '../../components/Cards/Cards'
 
 export default function Servicios() {
     return (
         <div className='Servicios'>
-            <h1>Soy los Servicios</h1>
+            <Cards />
         </div>
     )
 }
