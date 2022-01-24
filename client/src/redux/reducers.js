@@ -1,8 +1,95 @@
+const silueta = "silueta.png"
 const initialState = {
-    lawers:["Olga", "Monica"],
-    accountants:["Jose", "Gustavo"],
-    customers:["Amarilla Gas"],
-    test:'este es un store para testear'
+    profecionales:[
+        {
+            nombre:'José Daniel Benolol',
+            profesion:'Contador',
+            imagen:silueta,
+        },
+        {
+            nombre:'Gustavo Alberto Benolol',
+            profesion:'Contador',
+            imagen:silueta,
+        },
+        {
+            nombre:'Olga Beatriz Salom',
+            profesion:'Abogada',
+            imagen:silueta,
+        },
+        {
+            nombre:'Nora Mónica Núñez',
+            profesion:'Abogada',
+            imagen:silueta,
+        },
+        {
+            nombre:'Fernando Falcon',
+            profesion:'Contador',
+            imagen:silueta,
+        },
+        {
+            nombre:'Carlos Kevin Zamudio',
+            profesion:'Contador',
+            imagen:silueta,
+        },
+        {
+            nombre:'Raul Nahuel Bravo Perdomo',
+            profesion:'Contador',
+            imagen:silueta,
+        },
+        {
+            nombre:'María Natalia Trangoni',
+            profesion:'Contadora',
+            imagen:silueta,
+        },
+        {
+            nombre:'Juan Manuel Gutierrez',
+            profesion:'Contador',
+            imagen:silueta,
+        },
+        {
+            nombre:'Luis Hernan Vega',
+            profesion:'Contador',
+            imagen:silueta,
+        },
+        {
+            nombre:'Rosa Esther Guex',
+            profesion:'Asistente',
+            imagen:silueta,
+        },
+        {
+            nombre:'Nuevo',
+            profesion:'Abogado',
+            imagen:silueta,
+        },
+    ],
+    servicios:[
+        {
+            title: 'Asesoría Contable',
+            text: 'Contadores experimentados a su disposición',
+            professional:'Contador',
+        },
+        {
+            title: 'Asesoría Tributaria',
+            text: 'Especialistas en impuestos a su disposición',
+            professional:'Contador',
+        },
+        {
+            title: 'Asesoría Jurídica',
+            text: 'Abogados con gran trayectoría a su disposición',
+            professional:'Abogado',
+        },
+        {
+            title: 'Mediadores',
+            text: 'contamos con nuestros propios mediadores a su disposición',
+            professional:'Mediador',
+        },
+        {
+            title: 'Conciliación Laboral',
+            text: 'no se algun texto',
+            professional:'Conciliador',
+        }
+    ],
+    otrasCosas:{}
 }
 
 function rootReducer(state = initialState, action) {

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import './SlideShow.css'
 ///home/alejandro/Development/Work/Familia/EstudioBS/client/src/components/SlideShow/img/triangleLeftArrow.svg
 import { ReactComponent as FlechaIzquierda } from './img/leftArrow.svg'
@@ -6,69 +7,8 @@ import { ReactComponent as FlechaDerecha } from './img/rightArrow.svg'
 
 export default function SlideShow() {
 
-    const silueta = "silueta.png"
-    const profecionales = [
-        {
-            nombre:'José Daniel Benolol',
-            profesion:'Contador',
-            imagen:silueta,
-        },
-        {
-            nombre:'Gustavo Alberto Benolol',
-            profesion:'Contador',
-            imagen:silueta,
-        },
-        {
-            nombre:'Olga Beatriz Salom',
-            profesion:'Abogada',
-            imagen:silueta,
-        },
-        {
-            nombre:'Nora Mónica Núñez',
-            profesion:'Abogada',
-            imagen:silueta,
-        },
-        {
-            nombre:'Fernando Falcon',
-            profesion:'Contador',
-            imagen:silueta,
-        },
-        {
-            nombre:'Carlos Kevin Zamudio',
-            profesion:'Contador',
-            imagen:silueta,
-        },
-        {
-            nombre:'Raul Nahuel Bravo Perdomo',
-            profesion:'Contador',
-            imagen:silueta,
-        },
-        {
-            nombre:'María Natalia Trangoni',
-            profesion:'Contadora',
-            imagen:silueta,
-        },
-        {
-            nombre:'Juan Manuel Gutierrez',
-            profesion:'Contador',
-            imagen:silueta,
-        },
-        {
-            nombre:'Luis Hernan Vega',
-            profesion:'Contador',
-            imagen:silueta,
-        },
-        {
-            nombre:'Rosa Esther Guex',
-            profesion:'Asistente',
-            imagen:silueta,
-        },
-        {
-            nombre:'Nuevo',
-            profesion:'Abogado',
-            imagen:silueta,
-        },
-    ]
+    const profecionales = useSelector(state => state.reducer.profecionales)
+    console.log(profecionales)
     
     const [index, setIndex] = useState(0)
     const [profesional, setProfesional] = useState(profecionales[0])
@@ -83,18 +23,12 @@ export default function SlideShow() {
         setProfesional(profecionales[nextIndex])
         setIndex(nextIndex)
     }
-/*
-    useEffect(
-        ()=>{
-            //efecto
-            console.log(`effect`)
-            //cleanup
-            return ()=>{
-                cleanup;
-            }
-        }, [input]
-    )
-    */
+
+    useEffect(()=>{
+        const timer = setTimeout(()=>{
+            next()
+        }, 1800)
+    },[profesional])
    
    return (
        <div className='SlideShow'>
