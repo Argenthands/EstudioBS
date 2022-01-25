@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { useSelector } from 'react-redux'
 import './SlideShow.css'
 ///home/alejandro/Development/Work/Familia/EstudioBS/client/src/components/SlideShow/img/triangleLeftArrow.svg
 import { ReactComponent as FlechaIzquierda } from './img/leftArrow.svg'
 import { ReactComponent as FlechaDerecha } from './img/rightArrow.svg'
+
 
 export default function SlideShow() {
 
@@ -23,11 +24,11 @@ export default function SlideShow() {
         setProfesional(profecionales[backIndex])
         setIndex(backIndex)
     }
-    const next = ()=>{
+    const next = useCallback(()=>{
         const nextIndex = index < profecionales.length -1 ? index +1 : 0;
         setProfesional(profecionales[nextIndex])
         setIndex(nextIndex)
-    }
+    }, [index, profecionales])
 
     useEffect(()=>{
         setTimeout(()=>{
