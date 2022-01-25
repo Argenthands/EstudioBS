@@ -1,65 +1,65 @@
-const silueta = "silueta.png"
+const silueta = ["silueta.png","siluetaF.png"]
 const initialState = {
     profecionales:[
         {
             nombre:'José Daniel Benolol',
             profesion:'Contador',
-            imagen:silueta,
+            imagen:silueta[0],
         },
         {
             nombre:'Gustavo Alberto Benolol',
             profesion:'Contador',
-            imagen:silueta,
+            imagen:silueta[0],
         },
         {
             nombre:'Olga Beatriz Salom',
             profesion:'Abogada',
-            imagen:silueta,
+            imagen:silueta[1],
         },
         {
             nombre:'Nora Mónica Núñez',
             profesion:'Abogada',
-            imagen:silueta,
+            imagen:silueta[1],
         },
         {
             nombre:'Fernando Falcon',
             profesion:'Contador',
-            imagen:silueta,
+            imagen:silueta[0],
         },
         {
             nombre:'Carlos Kevin Zamudio',
             profesion:'Contador',
-            imagen:silueta,
+            imagen:silueta[0],
         },
         {
             nombre:'Raul Nahuel Bravo Perdomo',
             profesion:'Contador',
-            imagen:silueta,
+            imagen:silueta[0],
         },
         {
             nombre:'María Natalia Trangoni',
             profesion:'Contadora',
-            imagen:silueta,
+            imagen:silueta[1],
         },
         {
             nombre:'Juan Manuel Gutierrez',
             profesion:'Contador',
-            imagen:silueta,
+            imagen:silueta[0],
         },
         {
             nombre:'Luis Hernan Vega',
             profesion:'Contador',
-            imagen:silueta,
+            imagen:silueta[0],
         },
         {
             nombre:'Rosa Esther Guex',
             profesion:'Asistente',
-            imagen:silueta,
+            imagen:silueta[1],
         },
         {
             nombre:'Nuevo',
             profesion:'Abogado',
-            imagen:silueta,
+            imagen:silueta[0],
         },
     ],
     servicios:[

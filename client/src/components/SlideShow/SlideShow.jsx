@@ -12,23 +12,30 @@ export default function SlideShow() {
     
     const [index, setIndex] = useState(0)
     const [profesional, setProfesional] = useState(profecionales[0])
+    const [moove, setMoove] = useState(true)
 
-    const back=()=>{
+    const stopMoove = ()=>{
+        setMoove(!moove)
+    }
+
+    const back = ()=>{
         const backIndex = index > 0 ? index -1 : profecionales.length -1;
         setProfesional(profecionales[backIndex])
         setIndex(backIndex)
     }
-    const next=()=>{
+    const next = ()=>{
         const nextIndex = index < profecionales.length -1 ? index +1 : 0;
         setProfesional(profecionales[nextIndex])
         setIndex(nextIndex)
     }
 
     useEffect(()=>{
-        const timer = setTimeout(()=>{
-            next()
-        }, 1800)
-    },[profesional])
+        setTimeout(()=>{
+            if(moove){
+                next()
+            }
+        }, 999)
+    },[index, moove, next])
    
    return (
        <div className='SlideShow'>
@@ -36,11 +43,11 @@ export default function SlideShow() {
             <button className='LeftControllers' onClick={back}>
                 <FlechaIzquierda />
             </button>
-            <div className='Slider'>
+            <button className='Slider' onClick={stopMoove}>
                 <img className='CarouselImg' src={require(`./img/${profesional.imagen}`)} alt="" />
                 <div className='Name'>{profesional.nombre}</div>
                 <div className='Profession'>{profesional.profesion}</div>
-            </div>
+            </button>
 
             <button className='RightControllers' onClick={next}>
                 <FlechaDerecha />
