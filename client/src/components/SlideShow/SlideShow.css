@@ -16,30 +16,18 @@
     height: 333px;
     width: auto;
 }
-.LeftControllers{
+.Button__Controllers{
     border: 2.5px solid darkgoldenrod;
     border-radius: 10px;
     padding: 3.5px;
     margin: auto;
+}
+.Button__Controllers:hover{
+    border: 2.5px solid black;
+    border-radius: 10px;
+    padding: 3.5px;
+    margin: auto;
+}
 
-}
-.LeftControllers:hover{
-    border: 2.5px solid black;
-    border-radius: 10px;
-    padding: 3.5px;
-    margin: auto;
-}
-.RightControllers{
-    border: 2.5px solid darkgoldenrod;
-    border-radius: 10px;
-    padding: 3.5px;
-    margin: auto;
-}
-.RightControllers:hover{
-    border: 2.5px solid black;
-    border-radius: 10px;
-    padding: 3.5px;
-    margin: auto;
-}
 .Name{}
 .Profession{}

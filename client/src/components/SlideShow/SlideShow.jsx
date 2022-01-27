@@ -41,7 +41,7 @@ export default function SlideShow() {
    return (
        <div className='SlideShow'>
 
-            <button className='LeftControllers' onClick={back}>
+            <button className='Button__Controllers' onClick={back}>
                 <FlechaIzquierda />
             </button>
             <button className='Slider' onClick={stopMoove}>
@@ -50,7 +50,7 @@ export default function SlideShow() {
                 <div className='Profession'>{profesional.profesion}</div>
             </button>
 
-            <button className='RightControllers' onClick={next}>
+            <button className='Button__Controllers' onClick={next}>
                 <FlechaDerecha />
             </button>
         </div>

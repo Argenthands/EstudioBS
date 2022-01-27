@@ -1,10 +1,11 @@
 import React from 'react'
-import Cards from '../../components/Cards/Cards'
+import ServiceCard from '../../components/ServicesCards/ServicesCards'
+import './Servicios.css'
 
 export default function Servicios() {
     return (
         <div className='Servicios'>
-            <Cards />
+            <ServiceCard />
         </div>
     )
 }
