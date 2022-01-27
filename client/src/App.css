@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=The+Nautigal&display=swap');
 *{
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  background-size: 100%;
-  /*
-  Font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima, Arial", "sans-serif";
-  font-family: 'The Nautigal', 'cursive';
-  */
-  font-family: 'Noto Sans', sans-serif;
+    margin: 0%;
+    padding: 0%;
+/*
+Font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima, Arial", "sans-serif";
+font-family: 'The Nautigal', 'cursive';
+*/
+    font-family: 'Noto Sans', sans-serif;
 }
 .App{
-  font-family: 'The Nautigal', 'cursive';
+    font-family: 'The Nautigal', 'cursive';
+}
+@media (max-width: 700px){
+
 }

@@ -17,6 +17,7 @@
     border-radius: 10px;
     padding: 3.5px;
     margin: 10px;
+    overflow: hidden;
 }
 .Button__Menu:hover{
     display: flex;
@@ -26,6 +27,7 @@
     border-radius: 10px;
     padding: 3.5px;
     margin: 10px;
+    overflow: hidden;
 }
 .active{
     display: flex;
@@ -35,7 +37,7 @@
     border-radius: 10px;
     padding: 3.5px;
     margin: 10px;
-    font-weight: bold;
+    overflow: hidden;
 }
 
 @media (max-width: 700px){
@@ -44,6 +46,29 @@
         flex-direction: column;
     }
     .Logo__Menu{
-        display: none;
+        margin-left: 45%;
+        width: 65px;
+    }
+    .Button__Menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2.5px solid darkgoldenrod;
+        border-radius: 10px;
+        padding: 3.5px;
+        margin: 10px;
+        overflow: hidden;
+        font-size: 50px;
+    }
+    .Button__Menu:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2.5px solid black;
+        border-radius: 10px;
+        padding: 3.5px;
+        margin: 10px;
+        overflow: hidden;
+        font-size: 50;
     }
 }

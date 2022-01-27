@@ -9,12 +9,7 @@ font-family: 'The Nautigal', cursive;
     background-size: 100%;
     margin: auto;
 }
-.Logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Typewriter{
+.TypewriterLong{
     background-color: black;
     color: white;
     display: flex;
@@ -25,6 +20,23 @@ font-family: 'The Nautigal', cursive;
     font-weight: bold;
     font-size: 50px;
 }
-.Image{
+.TypewriterShort{
+    display: none;
+}
 
+@media (max-width: 700px){
+    .TypewriterLong{
+        display: none;
+    }
+    .TypewriterShort{
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Merriweather', serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+    }
 }
