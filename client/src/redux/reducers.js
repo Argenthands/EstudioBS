@@ -1,6 +1,6 @@
 const silueta = ["silueta.png","siluetaF.png"]
 const initialState = {
-    profecionales:[
+    profecionales:[ //cambiar la c por la s en todos lados
         {
             nombre:'José Daniel Benolol',
             profesion:'Contador',

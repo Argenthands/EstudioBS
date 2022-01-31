@@ -3,6 +3,8 @@
 *{
     margin: 0%;
     padding: 0%;
+    min-height: 70%;
+    position: relative;
 /*
 Font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima, Arial", "sans-serif";
 font-family: 'The Nautigal', 'cursive';
@@ -11,7 +13,37 @@ font-family: 'The Nautigal', 'cursive';
 }
 .App{
     font-family: 'The Nautigal', 'cursive';
+    
+}
+.Button{
+    border: 2.5px solid darkgoldenrod;
+    border-radius: 10px;
+    padding: 3px;
+    margin: auto;
+    min-height: 15%;
+    max-height: 30%;
+}
+.Button:hover{
+    border: 2.5px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    min-height: 15%;
+    max-height: 30%;
 }
 @media (max-width: 700px){
-
+    .Button{
+        border: 2.5px solid darkgoldenrod;
+        border-radius: 10px;
+        padding: 3px;
+        margin: auto;
+        min-height: 65%;
+    }
+    .Button:hover{
+        border: 2.5px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: auto;
+        min-height: 65%;
+    }
 }

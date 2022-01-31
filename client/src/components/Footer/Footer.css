@@ -1,27 +1,35 @@
 .Footer{
-    
-    background-size: 100%;
-    margin-top: 0;
+    background: url('../../image/rozado.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
-    grid-template-columns: 40% 30% 10% 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px 200px;
 }
+
 .FooterItem{
-    margin-left: 30%;
-    margin-right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30%;
+    max-height: 75%;
 }
+
 .FooterTitle{
+    margin-top: 10%;
     font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima, Arial", "sans-serif";
+
 }
-.Button{
-    border: 2.5px solid darkgoldenrod;
-    border-radius: 10px;
-    padding: 3px;
-}
-.Button:hover{
-    border: 2.5px solid black;
-    border-radius: 10px;
-    padding: 5px;
-}
-.SendResume{
-    margin-left: 0%;
+
+@media (max-width: 700px){
+    .Footer{
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+    .FooterItem{
+        display: flex;
+        align-items: center;
+        min-height: 35%;
+        max-height: 35%;
+    }
 }
