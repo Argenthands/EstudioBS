@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import { useSelector } from 'react-redux'
 import './SlideShow.css'
-///home/alejandro/Development/Work/Familia/EstudioBS/client/src/components/SlideShow/img/triangleLeftArrow.svg
 import { ReactComponent as FlechaIzquierda } from './img/leftArrow.svg'
 import { ReactComponent as FlechaDerecha } from './img/rightArrow.svg'
 
@@ -9,7 +8,6 @@ import { ReactComponent as FlechaDerecha } from './img/rightArrow.svg'
 export default function SlideShow() {
 
     const profecionales = useSelector(state => state.reducer.profecionales)
-    console.log(profecionales)
     
     const [index, setIndex] = useState(0)
     const [profesional, setProfesional] = useState(profecionales[0])
@@ -31,11 +29,14 @@ export default function SlideShow() {
     }, [index, profecionales])
 
     useEffect(()=>{
-        setTimeout(()=>{
+        const time = setTimeout(()=>{
             if(moove){
                 next()
             }
-        }, 999)
+        }, 1555)
+        return ()=>{
+            clearTimeout(time)
+        }
     },[index, moove, next])
    
    return (

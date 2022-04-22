@@ -7,7 +7,7 @@ export default function ServiceCard(props) {
 
     return (
         <div className='ServiceCard'>
-            <h4 className='CardTitle'>{title}</h4>
+            <h4 className='CardTitle'>{title}:</h4>
             <p>{text}</p>
             <button className='CardButton'>{`Contacta un ${professional}`}</button>
         </div>

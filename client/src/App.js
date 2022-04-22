@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import NavBar from "./components/NavBar/NavBar";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Body from "./components/Body/Body";
+import Home from "./pages/Home/Home";
 import ContactForm from "./components/ContactForm/ContactForm";
 import Profesionales from "./pages/Profesionales/Profesionales";
 import Servicios from "./pages/Servicios/Servicios";
@@ -18,28 +18,25 @@ export default function App() {
 	return (
 		<div className="App">
 			<NavBar />
+			<Header />
 			<Routes>
 				<Route path="/" element={
 					<>
-						<Header />
-						<Body />
+						<Home />
 					</>
 				} />
 				<Route path="/Profesionales" element={
 					<>
-						<Header />
 						<Profesionales />
 					</>
 				} />
 				<Route path="/Servicios" element={
 					<>
-						<Header />
 						<Servicios />
 					</>
 				} />
 				<Route path="/AboutUs" element={
 					<>
-						<Header />
 						<AboutUs />
 					</>
 				} />
@@ -50,7 +47,6 @@ export default function App() {
 				} />
 				<Route path="Contact" element={
 					<>
-						<Header />
 						<ContactForm />
 					</>
 				} />

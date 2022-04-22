@@ -1,35 +1,46 @@
 .Footer{
-    background: url('../../image/rozado.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('../../image/MarmolWhite1.jpg');
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .FooterItem{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 30%;
-    max-height: 75%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .FooterTitle{
-    margin-top: 10%;
+    display: flex;
+    align-items: center;
     font-family: "Calibri", "Candara", "Segoe", "Segoe UI", "Optima, Arial", "sans-serif";
 
+}
+
+.Button_Contact{
+    border: 2.5px solid darkgoldenrod;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: auto;
+}
+.Button_Contact:hover{
+    border: 2.5px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: auto;
 }
 
 @media (max-width: 700px){
     .Footer{
         display: grid;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
     }
     .FooterItem{
-        display: flex;
-        align-items: center;
-        min-height: 35%;
-        max-height: 35%;
+
     }
 }

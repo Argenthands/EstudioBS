@@ -22,6 +22,9 @@ font-family: 'The Nautigal', 'cursive';
     margin: auto;
     min-height: 15%;
     max-height: 30%;
+    display: flex;
+    align-items: center;
+
 }
 .Button:hover{
     border: 2.5px solid black;
@@ -30,6 +33,8 @@ font-family: 'The Nautigal', 'cursive';
     margin: auto;
     min-height: 15%;
     max-height: 30%;
+    display: flex;
+    align-items: center;
 }
 @media (max-width: 700px){
     .Button{
@@ -38,6 +43,8 @@ font-family: 'The Nautigal', 'cursive';
         padding: 3px;
         margin: auto;
         min-height: 65%;
+        display: flex;
+        align-items: center;
     }
     .Button:hover{
         border: 2.5px solid black;
@@ -45,5 +52,7 @@ font-family: 'The Nautigal', 'cursive';
         padding: 5px;
         margin: auto;
         min-height: 65%;
+        display: flex;
+        align-items: center;
     }
 }

@@ -1,4 +1,5 @@
 .NavBar {
+    background: url('../../image/MarmolWhite1.jpg');
     display: grid;
     grid-template-columns: repeat(7, 12%);
     grid-template-rows: 100px;
@@ -19,8 +20,6 @@
     padding: 3.5px;
     margin: 10px;
     overflow: hidden;
-    max-height: 50%;
-    min-height: 50%;
 }
 .Button__Menu:hover{
     display: flex;
@@ -31,8 +30,7 @@
     padding: 3.5px;
     margin: 10px;
     overflow: hidden;
-    max-height: 75%;
-    min-height: 75%;
+
 }
 .active{
     display: flex;
@@ -43,13 +41,11 @@
     padding: 3.5px;
     margin: 10px;
     overflow: hidden;
-    max-height: 50%;
-    min-height: 50%;
 }
 
 @media (max-width: 700px){
     .NavBar{
-        background: url('../../image/rozado.jpeg');
+        background: url('../../image/MarmolWhite1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -69,7 +65,6 @@
         margin: 10px;
         overflow: hidden;
         font-size: 50px;
-        max-width: 80%;
     }
     .Button__Menu:hover{
         display: flex;
@@ -81,7 +76,6 @@
         margin: 10px;
         overflow: hidden;
         font-size: 50;
-        max-width: 80%;
     }
     .active{
         display: flex;
@@ -93,6 +87,5 @@
         margin: 10px;
         overflow: hidden;
         font-size: 50px;
-        max-width: 80%;
     }
 }
