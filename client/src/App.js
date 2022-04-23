@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import ContactForm from "./components/ContactForm/ContactForm";
 import Profesionales from "./pages/Profesionales/Profesionales";
+import Profesional from "./pages/Profesional/Profesional";
 import Servicios from "./pages/Servicios/Servicios";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Location from "./pages/Location/Location";
@@ -50,6 +51,7 @@ export default function App() {
 						<ContactForm />
 					</>
 				} />
+				<Route path="Profesional/:id" element={<Profesional />} />
 				<Route path="*" element={<NotFound />}/>
 			</Routes>
 			<Footer />
