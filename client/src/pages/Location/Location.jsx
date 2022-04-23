@@ -5,8 +5,8 @@ import './Location.css'
 export default function Location() {
     return (
         <div className='Location'>
-            <Titles text="Servicios" />
-            <h3>HIPOLITO IRIGOYEN 433 | RESISTENCIA | CHACO | ARGENTINA | H35000ADI</h3>
+            <Titles text="Ubicación" />
+            <h3 className='DirectionInfo'>HIPOLITO IRIGOYEN 433 | RESISTENCIA | CHACO | ARGENTINA | H35000ADI</h3>
             <iframe 
                 className='GoogleMaps'
                 title='GoogleMaps'
