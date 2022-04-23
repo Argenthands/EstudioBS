@@ -1,13 +1,11 @@
 import React from 'react'
+import Titles from '../../components/Titles/Titles'
 import './Location.css'
-//import axios from "axios";
-import image from '../../image/Entrada.jpg'
-
 
 export default function Location() {
     return (
         <div className='Location'>
-            <img src={image} alt="asociados" width="1800" height="500"/>
+            <Titles text="Servicios" />
             <h3>HIPOLITO IRIGOYEN 433 | RESISTENCIA | CHACO | ARGENTINA | H35000ADI</h3>
             <iframe 
                 className='GoogleMaps'

@@ -85,7 +85,7 @@ const initialState = {
         },
         {
             title: 'Conciliación Laboral',
-            text: 'no se algun texto',
+            text: '',
             professional:'Conciliador',
         }
     ],

@@ -20,6 +20,7 @@
     padding: 3.5px;
     margin: 10px;
     overflow: hidden;
+    min-height: 60%;
 }
 .Button__Menu:hover{
     display: flex;
@@ -30,6 +31,7 @@
     padding: 3.5px;
     margin: 10px;
     overflow: hidden;
+    min-height: 80%;
 
 }
 .active{
@@ -41,6 +43,7 @@
     padding: 3.5px;
     margin: 10px;
     overflow: hidden;
+    min-height: 70%;
 }
 
 @media (max-width: 700px){
