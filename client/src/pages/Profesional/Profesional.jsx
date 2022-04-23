@@ -7,8 +7,8 @@ export default function Profesional() {
 
 
     const { id } = useParams()
-    const profecionales = useSelector(state => state.reducer.profecionales)
-    console.log(profecionales)
+    const profesionales = useSelector(state => state.reducer.profecionales)
+    console.log(profesionales)
     return (
         <div className='Profesional'>
             <Titles text={id} />

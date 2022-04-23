@@ -2,12 +2,16 @@ import React from 'react'
 import './Titles.css'
 
 export default function Titles({ text }) {
+    const title = text.split(' ')
 
-    console.log(text)
     return (
-        <div className='Container_Title'>
-            <h2 class="border">{text}</h2>
-            <h2 class="wave">{text}</h2>
+        <div >
+            {title.map((title, index) => (
+                <div className='Container_Title' key={index}>
+                    <h2 className="border">{title}</h2>
+                    <h2 className="wave">{title}</h2>
+                </div>
+            ))}
         </div>
     )
 }
