@@ -1,0 +1,6 @@
+.ProfesionalCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2.5px solid darkgoldenrod;
+}
