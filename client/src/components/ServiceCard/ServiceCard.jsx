@@ -1,5 +1,5 @@
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
+
 import './ServiceCard.css'
 
 export default function ServiceCard(props) {

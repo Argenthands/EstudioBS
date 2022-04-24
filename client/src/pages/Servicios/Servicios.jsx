@@ -1,4 +1,3 @@
-import React from 'react'
 import ServiceCard from '../../components/ServicesCards/ServicesCards'
 import Titles from '../../components/Titles/Titles'
 import './Servicios.css'

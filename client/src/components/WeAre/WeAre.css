@@ -1,0 +1,32 @@
+.WeAre{
+    margin: 3vh;
+    padding: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.Text{
+    border: solid 2px black;
+    margin: 1vh;
+    padding: 3vh;
+}
+.Navegate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px){
+    .WeAre{
+        grid-template-columns: 1fr;
+    }
+    .Text{
+        border: solid 2px black;
+        margin: 1vh;
+        padding: 3vh;
+    }
+    .Navegate{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
