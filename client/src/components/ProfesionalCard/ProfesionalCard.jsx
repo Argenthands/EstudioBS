@@ -3,7 +3,6 @@ import './ProfesionalCard.css'
 
 export default function ProfesionalCard({props}) {
     const { nombre, profesion, imagen } = props
-    console.log(props)
 
     return (
         <div ProfesionalCard>    

@@ -1,66 +1,105 @@
+/* 
+    José Daniel Benolol
+    Gustavo Alberto Benolol
+    Olga Beatriz Salom
+    Nora Mónica Núñez
+    Fernando Falcon
+    Carlos Kevin Zamudio
+    Raul Nahuel Bravo Perdomo
+    María Natalia Trangoni
+    Juan Manuel Gutierrez
+    Luis Hernan Vega
+    Rosa Esther Guex
+*/
 const silueta = ["silueta.png","siluetaF.png"]
 const initialState = {
-    profecionales:[ //cambiar la c por la s en todos lados
+    profecionales:[ //cambiar la c por la s en todos lados, que boludo porque hay demasiados lugares para cambiar que usan esto
         {
-            nombre:'José Daniel Benolol',
+            nombre:'nombre 1',
             profesion:'Contador',
             imagen:silueta[0],
         },
         {
-            nombre:'Gustavo Alberto Benolol',
+            nombre:'nombre 2',
             profesion:'Contador',
             imagen:silueta[0],
         },
         {
-            nombre:'Olga Beatriz Salom',
-            profesion:'Abogada',
+            nombre:'nombre 3',
+            profesion:'Abogado',
             imagen:silueta[1],
         },
         {
-            nombre:'Nora Mónica Núñez',
-            profesion:'Abogada',
+            nombre:'nombre 4',
+            profesion:'Abogado',
             imagen:silueta[1],
         },
         {
-            nombre:'Fernando Falcon',
+            nombre:'nombre 5',
             profesion:'Contador',
             imagen:silueta[0],
         },
         {
-            nombre:'Carlos Kevin Zamudio',
+            nombre:'nombre 6',
             profesion:'Contador',
             imagen:silueta[0],
         },
         {
-            nombre:'Raul Nahuel Bravo Perdomo',
+            nombre:'nombre 7',
             profesion:'Contador',
             imagen:silueta[0],
         },
         {
-            nombre:'María Natalia Trangoni',
+            nombre:'nombre 8',
             profesion:'Contadora',
             imagen:silueta[1],
         },
         {
-            nombre:'Juan Manuel Gutierrez',
+            nombre:'nombre 9',
             profesion:'Contador',
             imagen:silueta[0],
         },
         {
-            nombre:'Luis Hernan Vega',
+            nombre:'nombre 10',
             profesion:'Contador',
             imagen:silueta[0],
         },
         {
-            nombre:'Rosa Esther Guex',
+            nombre:'nombre 11',
             profesion:'Asistente',
             imagen:silueta[1],
         },
         {
-            nombre:'Nuevo',
+            nombre:'Nombre 12',
+            profesion:'Abogado',
+            imagen:silueta[1],
+        },
+        {
+            nombre:'nombre 13',
             profesion:'Abogado',
             imagen:silueta[0],
         },
+        {
+            nombre:'nombre 14',
+            profesion:'Contador',
+            imagen:silueta[1],
+        },
+        {
+            nombre:'nombre 15',
+            profesion:'Mediador',
+            imagen:silueta[1],
+        },
+        {
+            nombre:'nombre 16',
+            profesion:'Mediador',
+            imagen:silueta[1],
+        },
+        {
+            nombre:'nombre 17',
+            profesion:'Mediador',
+            imagen:silueta[0],
+        }
+        
     ],
     servicios:[
         {

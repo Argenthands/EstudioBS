@@ -8,15 +8,15 @@ export default function Profesional() {
 
 
     const { id } = useParams()
-    const profesionales = useSelector(state => state.reducer.profecionales)
+    const profesionales = useSelector(state => state.reducer.profecionales).filter(elemment => elemment.profesion === id)
     
     return (
         <div className='Profesional'>
             <Titles text={id} />
             <button className='ProfesionalCards'>
-                {profesionales.map((profesional, index )=> (
+                {profesionales.map((profesional, index) => (
                     <div className='Profesional__item' key={index}>
-                        <ProfesionalCard props={profesional}/>
+                        <ProfesionalCard props={profesional} />
                     </div>
                 ))}
             </button>
