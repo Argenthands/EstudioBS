@@ -98,7 +98,17 @@ const initialState = {
             nombre:'nombre 17',
             profesion:'Mediador',
             imagen:silueta[0],
-        }
+        },
+        {
+            nombre:'nombre 18',
+            profesion: 'Conciliador',
+            imagen:silueta[1],
+        },
+        {
+            nombre:'nombre 19',
+            profesion: 'Conciliador',
+            imagen:silueta[0],
+        },
         
     ],
     servicios:[
