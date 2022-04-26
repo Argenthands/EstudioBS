@@ -64,10 +64,12 @@ export default function ContactForm() {
                 <label htmlFor='resume' className='Lable'>
                     CV:
                 </label>
-                <input
-                    className='Attach'
-                    type='file' 
-                />
+                <label className="custom-file-upload">
+                    <input
+                        className='Attach'
+                        type='file' 
+                    />
+                </label>
                 <button className='button_submit_contact_form'>Submit</button>
             </form>
         </div>

@@ -10,23 +10,22 @@ import Tributarios from './img/Tributarios.png';
 export default function WeAre() {
     
     const reducer = useSelector(state => state.reducer.servicios)
-    let professional = 'Contador'
     const navigate = useNavigate()
 
     return (
         <div className='WeAre'>
             <div className='Text'>
                 <p>
-                    <b>Un estudio</b> compuesto por contadores y abogados especializados en consultas tributarias, contables, civiles y comerciales.
+                    <b>Un estudio</b> compuesto por contadores y abogados especializados en consultoría tributaria, contable, civil y comercial.
                 </p>
                 <p>
-                    La Alta Calificación de los profecionales que integran el equipot de trabajo y el compromiso con las necesidades de los clientes nos acompañan por más de 20 años de actividad ininterrumpida.
+                    La alta calificación de los profesionales que integran el nuestro equipo de trabajo y el compromiso con las necesidades de los clientes son nuestros principales valores que nos han acompañado por más de 20 años de actividad ininterrumpida.
                 </p>
                 <p>
-                    La permanente actualización de nuestro equipo de trabajo, tanto en materia normativa como en tecnológias son el minimo de nuestra calidad, para brindarles la eficiencia óptima.
+                    La permanente actualización en materia normativa y tecnológica nos posibilita cubrir con un alto nivel de eficiencia las necesidades de las empresas en la economía actual.
                 </p>
                 <p>
-                    Contamos con una basta experiencia en prouestas y soluciones en facilitarle a nuestros clientes la manera mas eficiente de afrontar sus desafios.
+                    Una vasta experiencia en propuestas y soluciones facilita a nuestros clientes la manera más productiva de desarrollar sus negocios y enfrentar sus desafíos.
                 </p>
             </div>
             <div className='Navegate'>
@@ -46,4 +45,3 @@ export default function WeAre() {
         </div>
     )
 }
-//<button className='CardButton' onClick={()=>navigate(`/Profesional/${professional}`)}>{`Contacta un ${professional}`}</button>
