@@ -11,12 +11,5 @@
 }
 .Profesional__item{
     margin: 5vh 9vw;
-    border: 2.5px solid darkgoldenrod;
-    border-radius: 10px;
-    padding: 5px;
-}
-.Profesional__item:hover{
-    border: 2.5px solid black;
-    border-radius: 10px;
     padding: 5px;
 }

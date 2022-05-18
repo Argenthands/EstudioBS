@@ -1,6 +1,14 @@
 .ProfesionalCard{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     border: 2.5px solid darkgoldenrod;
+    border-radius: 10px;
+}
+.ProfesionalCard:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2.5px solid black;
+    border-radius: 10px;
 }
